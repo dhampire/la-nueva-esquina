@@ -1,0 +1,28 @@
+	.section__days{
+		background: rgba(15, 12, 41, 0.5);  /* fallback for old browsers */
+		background: -webkit-linear-gradient(left, rgba(36, 36, 62, 0.5), rgba(48, 43, 99, 0.5), rgba(15, 12, 41, 0.5));
+		background: -o-linear-gradient(left, rgba(36, 36, 62, 0.5), rgba(48, 43, 99, 0.5), rgba(15, 12, 41, 0.5));
+		background: linear-gradient(to right, rgba(36, 36, 62, 0.5), rgba(48, 43, 99, 0.5), rgba(15, 12, 41, 0.5));  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	
+		border-radius:5px;
+		grid-column:2 / -1;
+		position:relative;
+		text-align:center;
+	
+		& img{
+			object-fit:scale-down;
+			// max-width: 350px;
+			max-height:350px
+		}
+	}
+
+		.buy__tickets{
+			position:absolute;
+			bottom:0;
+			right:2rem;
+
+		}
+
+	.day2{
+		
+	}

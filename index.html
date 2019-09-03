@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">	
+	<title>La Nueva Esquina</title>
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/all.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/animate.css"> -->
+</head>
+<body>
+
+<main class="main">
+<!-- 	<header class="header">
+		<img class="header__logo" src="img/logo.png" alt="">
+	</header> -->
+	<section class="forms">
+		
+		<div class="register sticky-top" id="register">
+			<center>
+				<img class="header__logo" src="img/logo.png" alt="">
+			</center>
+			<h2><i class="fas fa-door-open"></i> Registro</h2>
+			<div class="register__text">
+				<p>Registrarte, tanto para comprar enrtradas y reservar mesas.</p>
+			<p>
+			<strong>LA NUEVA ESQUINA</strong> <br />
+			FEXPOCRUZ 2019</p>
+			</div>
+			<button class="btn btn-btn-ligth btn-rounded mb-4 btn-block glow" data-toggle="modal" data-target="#modalRegisterForm">Registrate</button>
+			<div class="register__movil" id="register__movil">
+				<button class="btn btn-light btn-block" data-toggle="modal" data-target="#modalRegisterForm">Registrate</button>
+			</div>
+		</div>
+
+		<div class="section__days neon">
+			<img src="img/days/kick-off.png" alt="">
+			<div class="buy__tickets">
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalDay1">Entradas</button>
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalTable1">Reserva de mesas</button>
+			</div>
+		</div>
+		<div class="section__days neon">
+			<img src="img/days/saturday-.png" alt="">
+			<div class="buy__tickets">
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalDay1">Entradas</button>
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalTable1">Reserva de mesas</button>
+			</div>
+		</div>
+		<div class="section__days neon">
+			<img src="img/days/sunday.png" alt="">
+			<div class="buy__tickets">
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalDay1">Entradas</button>
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalTable1">Reserva de mesas</button>
+			</div>
+		</div>
+		<div class="section__days neon">
+			<img src="img/days/serenata.png" alt="">
+			<div class="buy__tickets">
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalDay1">Entradas</button>
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalTable1">Reserva de mesas</button>
+			</div>
+		</div>
+		<div class="section__days neon">
+			<img src="img/days/keep-it-up.png" alt="">
+			<div class="buy__tickets">
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalDay1">Entradas</button>
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalTable1">Reserva de mesas</button>
+			</div>
+		</div>
+		<div class="section__days neon">
+			<img src="img/days/acoustic.png" alt="">
+			<div class="buy__tickets">
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalDay1">Entradas</button>
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalTable1">Reserva de mesas</button>
+			</div>
+		</div>
+		<div class="section__days neon">
+			<img src="img/days/frat.png" alt="">
+			<div class="buy__tickets">
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalDay1">Entradas</button>
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalTable1">Reserva de mesas</button>
+			</div>
+		</div>
+		<div class="section__days neon">
+			<img src="img/days/spring.png" alt="">
+			<div class="buy__tickets">
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalDay1">Entradas</button>
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalTable1">Reserva de mesas</button>
+			</div>
+		</div>
+		<div class="section__days neon">
+			<img src="img/days/One-last-breath.png" alt="">
+			<div class="buy__tickets">
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalDay1">Entradas</button>
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalTable1">Reserva de mesas</button>
+			</div>
+		</div>
+		<div class="section__days neon">
+			<img src="img/days/THE-END.png" alt="">
+			<div class="buy__tickets">
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalDay1">Entradas</button>
+				<button class="btn btn-ligth btn-rounded mb-4 glow" data-toggle="modal" data-target="#modalTable1">Reserva de mesas</button>
+			</div>
+		</div>						
+	</section>
+	<footer class="footer">
+		footer
+	</footer>
+</main>
+
+
+
+<!-- registro -->
+<div class="modal fade" id="modalRegisterForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+		<div class="modal-header text-center">
+	        <h4 class="modal-title w-100 font-weight-bold">Ingresa tus datos</h4>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+      	<div class="modal-body mx-3">
+		  <form action="" class="form">
+			<div class="form-group">
+			    <label class="form-label" for="first">Nombres</label>
+			    <input id="first" class="form-input" type="text" />
+			</div>
+			<div class="form-group">
+			    <label class="form-label" for="last">Apellidos</label>
+			    <input id="last" class="form-input" type="text" />
+			</div>
+			<div class="form-group">
+			    <label class="form-label" for="phone">Teléfono</label>
+			    <input id="phone" class="form-input" type="text" />
+			</div>
+			<div class="form-group">
+			    <label class="form-label" for="mail">Correo Electrónico</label>
+			    <input id="mail" class="form-input" type="mail" />
+			</div>
+			<div class="form-group custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="smoke" checked>
+			    <label class="custom-control-label" for="smoke">¿Eres Fumador?</label>
+			</div>
+			<div class="form-group">
+				<select class="custom-select date-select" id="ticketsDay1">
+			    <option selected>Dia</option>
+			    <option value="1">Una</option>
+			    <option value="2">Dos</option>
+			    <option value="3">Tres</option>
+			    <option value="4">Cuatro</option>
+			    <option value="5">Cinco</option>
+			    <option value="6">Seis</option>
+			    <option value="7">Siete</option>
+			    <option value="8">Ocho</option>
+			    <option value="9">Nueve</option>
+			    <option value="3">Diez</option>
+			  </select>
+			  <select class="custom-select date-select" id="ticketsDay1">
+			    <option selected>Mes</option>
+			    <option value="1">Una</option>
+			    <option value="2">Dos</option>
+			    <option value="3">Tres</option>
+			    <option value="4">Cuatro</option>
+			    <option value="5">Cinco</option>
+			    <option value="6">Seis</option>
+			    <option value="7">Siete</option>
+			    <option value="8">Ocho</option>
+			    <option value="9">Nueve</option>
+			    <option value="3">Diez</option>
+			  </select>
+			  <select class="custom-select date-select" id="ticketsDay1">
+			    <option selected>Año</option>
+			    <option value="1">Una</option>
+			    <option value="2">Dos</option>
+			    <option value="3">Tres</option>
+			    <option value="4">Cuatro</option>
+			    <option value="5">Cinco</option>
+			    <option value="6">Seis</option>
+			    <option value="7">Siete</option>
+			    <option value="8">Ocho</option>
+			    <option value="9">Nueve</option>
+			    <option value="3">Diez</option>
+			  </select>
+			</div>
+			<div class="form-group custom-control custom-checkbox">
+			    <input type="checkbox" class="custom-control-input" id="term" checked>
+			    <label class="custom-control-label" for="term">Terminos de uso y condiciones</label>
+			</div>
+			<button type="submit" class="btn btn-dark">R E G I S T R A R M E</button>
+		  </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalDay1" tabindex="-1" role="dialog" aria-labelledby="modalDay1"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+		<div class="modal-header text-center">
+	        <h4 class="modal-title w-100 font-weight-bold">Kick off</h4>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+      	<div class="modal-body mx-3">
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      		<p><strong>Precio:</strong> 20Bs</p>
+		  <form action="" class="form">
+			<div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    <label class="input-group-text" for="ticketsDay1">Cantidad</label>
+			  </div>
+			  <select class="custom-select" id="ticketsDay1">
+			    <option selected>Entradas</option>
+			    <option value="1">Una</option>
+			    <option value="2">Dos</option>
+			    <option value="3">Tres</option>
+			    <option value="4">Cuatro</option>
+			    <option value="5">Cinco</option>
+			    <option value="6">Seis</option>
+			    <option value="7">Siete</option>
+			    <option value="8">Ocho</option>
+			    <option value="9">Nueve</option>
+			    <option value="3">Diez</option>
+			  </select>
+			</div>
+			<p class="text-right"><strong>Total:</strong> 200 Bs.</p>
+			<button type="submit" class="btn btn-dark neon">COMPRAR ENTRADAS</button>
+		  </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modalTable1" tabindex="-1" role="dialog" aria-labelledby="modalTable1"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+		<div class="modal-header text-center">
+	        <h4 class="modal-title w-100 font-weight-bold">Reserva de mesas - Kick Off</h4>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+      	<div class="modal-body">
+		  <form action="" class="form">
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      		<p><strong>Precio:</strong> 2000Bs</p>
+
+				<div class="input-group mb-3">
+				<p class="text-right" style="width: 100%"><strong>Total:</strong> 200 Bs.</p>
+			
+			<button type="submit" class="btn btn-dark clearfix">RESERVA MESA</button>
+		  </form>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Scripts -->
+
+<script>
+
+</script>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>

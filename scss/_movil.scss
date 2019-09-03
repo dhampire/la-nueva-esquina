@@ -1,0 +1,47 @@
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+
+@include for-phone-only { 
+	.header{
+		justify-self: center;
+	}
+	.register{
+		// background-color: rgba(0, 22, 40, 0);
+		position: relative;
+		height:auto;
+
+		// &__text, & h2{
+		// 	display:none
+		// }
+		&__movil {
+			background:rgba(0, 22, 40, .95);
+			background-blend-mode: multiply;
+			padding:1.5rem;
+			position: fixed; /* Make it stick/fixed */
+		  	display: block;
+		  	grid-column: 1 /- 1;
+		  	margin-left:-30px;
+		  	top: -150px;
+		  	width:100%;
+		}
+	}
+	.main{
+		margin:0 1rem;
+	} 
+      .register, .section__days{
+      	grid-column:1 / -1;
+      }
+
+	.sticky-top {
+	}
+
+	.section__days img{
+		width:100%;
+		height: auto;
+	}
+
+	.forms{
+		grid-template-rows: minmax(100px, 1fr) !important;
+	}
+   }

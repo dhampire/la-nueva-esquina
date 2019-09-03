@@ -1,0 +1,27 @@
+.register{
+	// background-color: #050001;
+	background-color: rgba(0, 22, 40, .81);
+	background-blend-mode: multiply;
+	// background-image: url("../img/grunge.png");
+	color: $white;
+	border-radius:5px;
+	padding: 1rem;
+	grid-column:1 / 2;
+	height: calc(100% + 40%);
+
+	& h2{
+		text-align: center;
+		padding: 1rem 0; 
+		border-bottom: 1px solid $white
+	}
+	&__movil {
+		display: none
+	}
+}
+
+
+	
+
+	// .register{
+	// 	background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+	// }

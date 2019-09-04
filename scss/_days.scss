@@ -1,28 +1,77 @@
-	.section__days{
-		background: rgba(15, 12, 41, 0.5);  /* fallback for old browsers */
-		background: -webkit-linear-gradient(left, rgba(36, 36, 62, 0.5), rgba(48, 43, 99, 0.5), rgba(15, 12, 41, 0.5));
-		background: -o-linear-gradient(left, rgba(36, 36, 62, 0.5), rgba(48, 43, 99, 0.5), rgba(15, 12, 41, 0.5));
-		background: linear-gradient(to right, rgba(36, 36, 62, 0.5), rgba(48, 43, 99, 0.5), rgba(15, 12, 41, 0.5));  /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	// .section__days{
 	
+	// 	grid-column:2 / -1;
+	// 	grid-template-columns: repeat(3, 1fr);
+	// 	color: $white;
+
+$x1: 0.8rem;
+$x15:1.5rem;
+$x2: 2rem;
+$x25:2.5rem;
+$x3: 3.5rem;
+
+	.days{
+		background: rgba(0, 22, 40, .75);  /* fallback for old browsers */
 		border-radius:5px;
+		color: $white;
+		display:grid;
 		grid-column:2 / -1;
-		position:relative;
-		text-align:center;
-	
-		& img{
-			object-fit:scale-down;
-			// max-width: 350px;
-			max-height:350px
-		}
-	}
-
-		.buy__tickets{
-			position:absolute;
-			bottom:0;
-			right:2rem;
-
-		}
-
-	.day2{
+		grid-template-columns: $grid2;
+		justify-items:center;
+		align-items:center;
+		padding:1rem 2rem; 
+		&--info{
+			line-height:1;
+			display:grid;
+			grid-template-columns: $grid2;
+			justify-items:center;
+			width: 100%;
 		
+			.day{font-size:$x1;}
+			.date--format{
+				font-family: 'Teko', sans-serif;
+				line-height:0.8;
+				text-shadow: 0 0 10px #ff0000;
+			}
+			.x1{font-size:$x1;}
+			.x15{font-size:$x15;}
+			.x2{font-size:$x2;}
+			.x25{font-size:$x25;}
+			.x3{font-size:$x3;}
+			
+			.date, .cover{
+				grid-column:1 / -1;
+			}
+			.tables{
+				display:grid;
+				grid-template-columns:$grid3;
+				grid-column:1 / span 2;
+				grid-gap:1rem;
+				align-items:center;
+			}
+			.middle {
+				border-left: 1px solid red;
+				border-right: 1px solid red;
+				padding:1rem;
+			}
+		}
+		// &--tables{
+		// 	display:grid;
+		// 	grid-template-columns:repeat(2, 1fr);		
+		// 	grid-gap: 1rem;
+		// }
+		&--img{
+			grid-column:2 / -1;
+
+			img {
+				width: 250px;
+			}
+		}
+		&--tickets{
+			grid-column:1 / -1;
+		}
 	}
+
+.bold{
+	font-weight:bold;
+}

@@ -29,16 +29,11 @@
 	.main{
 		margin:0 1rem;
 	} 
-      .register, .section__days{
+      .register, .days, .days--info, .days--img{
       	grid-column:1 / -1;
       }
 
 	.sticky-top {
-	}
-
-	.section__days img{
-		width:100%;
-		height: auto;
 	}
 
 	.forms{

@@ -4,7 +4,8 @@ body, html {
   background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover;
+  font-size: 16px; }
 
 .main {
   display: grid;
@@ -206,6 +207,8 @@ body, html {
     box-shadow: 0 0 3px rgba(255, 111, 0, 0.98), 0 0 15px rgba(255, 111, 0, 0.42), 0 0 6px rgba(121, 118, 114, 0.1), 0 0 11px rgba(121, 118, 114, 0.1), 0 0 17px rgba(121, 118, 114, 0.2), 0 0 30px #797672; } }
 
 @media (max-width: 599px) {
+  body, html {
+    font-size: 14px !important; }
   .header {
     justify-self: center; }
   .register {

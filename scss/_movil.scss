@@ -3,6 +3,9 @@
 }
 
 @include for-phone-only { 
+	body, html{
+		font-size:14px !important;
+	}
 	.header{
 		justify-self: center;
 	}

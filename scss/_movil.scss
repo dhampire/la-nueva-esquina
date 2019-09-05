@@ -18,7 +18,7 @@
 		// 	display:none
 		// }
 		&__movil {
-			background:rgba(0, 22, 40, .95);
+			background:rgba(0, 22, 40, 1);
 			background-blend-mode: multiply;
 			padding:1.5rem;
 			position: fixed; /* Make it stick/fixed */
@@ -41,5 +41,10 @@
 
 	.forms{
 		grid-template-rows: minmax(100px, 1fr) !important;
+	}
+	.footer {
+		margin: 2rem 0;
+		bottom:0;
+		position:relative;
 	}
    }

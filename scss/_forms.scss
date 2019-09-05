@@ -9,6 +9,7 @@
   position: absolute;
   left: 0;
   top: 10px;
+  padding:0 1rem;
   color: #999;
   background-color: $white;
   z-index: 10;
@@ -24,16 +25,17 @@
 }
 
 .form-input {
-  position: relative;
-  padding: 12px 0px 5px 0;
-  width: 100%;
-  outline: 0;
   border: 0;
+  border-radius:5px;
   box-shadow: 0 1px 0 0 #e5e5e5;
+  outline: 0;
+  padding: 12px 0px 5px 0;
+  position: relative;
   transition: box-shadow 150ms ease-out;
+  width: 100%;
 }
 .form-input:focus {
-  box-shadow: 0 2px 0 0 blue;
+  box-shadow: 0 2px 0 0 rgba(255,87,34,1);
 }
 
 .form-input.filled {
@@ -41,7 +43,6 @@
 }
   .date-select{
     width:30%;
-    background:transparent;
   }
 
   .forms{

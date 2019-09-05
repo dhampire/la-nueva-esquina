@@ -32,6 +32,7 @@ body, html {
   position: absolute;
   left: 0;
   top: 10px;
+  padding: 0 1rem;
   color: #999;
   background-color: #fff;
   z-index: 10;
@@ -45,23 +46,23 @@ body, html {
   font-size: .75em; }
 
 .form-input {
-  position: relative;
-  padding: 12px 0px 5px 0;
-  width: 100%;
-  outline: 0;
   border: 0;
+  border-radius: 5px;
   box-shadow: 0 1px 0 0 #e5e5e5;
-  transition: box-shadow 150ms ease-out; }
+  outline: 0;
+  padding: 12px 0px 5px 0;
+  position: relative;
+  transition: box-shadow 150ms ease-out;
+  width: 100%; }
 
 .form-input:focus {
-  box-shadow: 0 2px 0 0 blue; }
+  box-shadow: 0 2px 0 0 #ff5722; }
 
 .form-input.filled {
   box-shadow: 0 2px 0 0 lightgreen; }
 
 .date-select {
-  width: 30%;
-  background: transparent; }
+  width: 30%; }
 
 .forms {
   display: grid;
@@ -143,6 +144,12 @@ body, html {
 .bold {
   font-weight: bold; }
 
+.footer {
+  position: fixed;
+  bottom: 1rem; }
+  .footer img {
+    width: 50px; }
+
 .btn {
   border: none;
   color: #fff;
@@ -215,7 +222,7 @@ body, html {
     position: relative;
     height: auto; }
     .register__movil {
-      background: rgba(0, 22, 40, 0.95);
+      background: #001628;
       background-blend-mode: multiply;
       padding: 1.5rem;
       position: fixed;
@@ -230,4 +237,8 @@ body, html {
   .register, .days, .days--info, .days--img {
     grid-column: 1 / -1; }
   .forms {
-    grid-template-rows: minmax(100px, 1fr) !important; } }
+    grid-template-rows: minmax(100px, 1fr) !important; }
+  .footer {
+    margin: 2rem 0;
+    bottom: 0;
+    position: relative; } }
